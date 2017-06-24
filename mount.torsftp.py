@@ -16,6 +16,16 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# This script needs the 'connect' program, get it from https://savannah.gnu.org/maintenance/connect.c
+
+# example:
+# $TorProxy: "127.0.0.1:9050"
+# $SFTPTorServer: ldwvpjcrw5mmekvg.onion
+# $SFTPUser: sftp
+# $SFTPPass: sftp
+
+# sshfs -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o proxycommand="/usr/local/bin/connect -S $TorProxy %h %p" -o password_stdin $SFTPUser@$SFTPTorServer:/ $MountPoint <<< "$SFTPPass"
+
 import argparse
 from subprocess import Popen, PIPE
 
