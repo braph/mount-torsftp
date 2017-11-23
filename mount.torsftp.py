@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # mount.torsftp - mount sshfs through tor using /etc/fstab
 # Copyright (C) 2015 Benjamin Abendroth

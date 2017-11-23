@@ -1,5 +1,6 @@
-#!/bin/bash -e
+#!/usr/bin/env bash
 
+set -e
 
 Progname=mount.torsftp
 SFTP_Url=""
